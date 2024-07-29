@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css.css">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('background1.jpg') no-repeat center center fixed;
+            background-size: cover;
+        }
+
+        main {
+            position: relative;
+            z-index: 1; /* コンテンツが背景の上に表示されるようにする */
+        }
+
+        header, footer {
+            background: rgba(0, 0, 0, 0.7); /* 背景を少し透過させる */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">ホーム</a></li>
+                <li><a href="#profile">プロフィール</a></li>
+                <li><a href="#projects">作品集</a></li>
+                <li><a href="#skills">スキルセット</a></li>
+                <li><a href="#contact">連絡先</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="fade-in" id="home">
+            <div class="container">
+                <h1>ようこそ、私のポートフォリオへ</h1>
+                <p>デザイナー兼開発者としての私の作品を紹介します。</p>
+                <a href="#projects" class="btn">作品集を見る</a>
+            </div>
+        </section>
+        <section class="fade-in" id="profile">
+            <div class="container">
+                <h2>profile</h2>
+                <p>木村 仁哉 愛知工業大学情報科学部メディア情報専攻２年</p>
+                <img src="Image1.png" alt="私の写真" class="profile-pic">
+            </div>
+        </section>
+       
+        <section id="skills">
+            <div class="container">
+                <h2>skills</h2>
+                <ul class="skills-list">
+                    <li>HTML/CSS</li>
+                    <li>JavaScript</li>
+                    <li>c言語、c++</li>
+                    <li>Photoshop</li>
+                    <li>Illustrator</li>
+                </ul>
+            </div>
+        </section>
+        <section class="fade-in" id="projects">
+            <div class="container">
+                <h2>作品集</h2>
+                <div class="project">
+                    <img src="x23035_portfolio_ロゴ.png" alt="プロジェクト1">
+                    <h3>ロゴデザイン</h3>
+                    <p>Illustratorで作成。実際に今後つかっていけるようなデザインにした。</p>
+                </div>
+                <div class="project">
+                    <img src="x23035_portfolio_加法混色.png" alt="プロジェクト2">
+                    <h3>加法混色</h3>
+                    <p>全体での色の混ざり方や１色のパターン、２色のパターンと分けて製作。説明文もつけることで分かりやすくした。</p>
+                </div>
+                <div class="project">
+                    <img src="x23035_portfolio_減法混色.png" alt="プロジェクト1">
+                    <h3>減法混色</h3>
+                    <p>加法混色と同じように全体で見たパターンと１色２色のパターンと分類して作った。製作はillustrator。
+                    </p>
+                </div>
+                <div class="project">
+                    <img src="Image.png" alt="プロジェクト1">
+                    <h3>キャラクターロゴデザイン
+                    </h3>
+                    <p>チームを組んでいる人達の雰囲気などを参考にキャラクターを作成。難しそうではあるが、そこまで難易度は高くない。
+                        アイビスペイントやpicsartを使用した。profile欄のアイコンも同じく自作である。
+                    </p>
+                </div>
+                <!-- 他のプロジェクトも追加 -->
+            </div>
+        </section>
+        <section class="fade-in" id="contact">
+            <div class="container">
+                <h2>連絡先</h2>
+                <form action="submit_form" method="POST">
+                    <label for="name">名前: fwaura</label>
+                    <label for="email">メールアドレス: mokapan0825@gmail.com</label>
+                    <label for="message">X: fwaura_DQX
+                    </label>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 fwaura. All rights reserved.</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>

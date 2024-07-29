@@ -1,0 +1,257 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: url('background1.jpg') no-repeat center center fixed;
+    background-size: cover; /* 画面全体に画像をフィットさせる */
+}
+h1, h2, h3 {
+    font-family: 'Lora', serif;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #007bff;
+}
+
+#home {
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#home .container {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#home h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+#home p {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+#home .btn {
+    padding: 12px 24px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+#home .btn:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+#profile {
+    padding: 50px 0;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+#profile .container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#profile h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+#profile p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+#projects {
+    padding: 50px 0;
+    background-color: #fff;
+    text-align: center;
+}
+
+#projects .container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+#projects h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.project {
+    margin-bottom: 30px;
+}
+
+.project img {
+    width: 70%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.project h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.project p {
+    font-size: 1rem;
+}
+
+#skills {
+    padding: 50px 0;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+#skills .container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#skills h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.skills-list {
+    list-style: none;
+    padding: 0;
+}
+
+.skills-list li {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+#contact {
+    padding: 50px 0;
+    background-color: #fff;
+    text-align: center;
+}
+
+#contact .container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form label {
+    margin-top: 10px;
+    font-size: 1rem;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    font-size: 1rem;
+}
+
+form button {
+    padding: 12px 24px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+form button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+footer p {
+    margin: 0;
+}
+.fade-in {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.fade-in.visible {
+    opacity: 1;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('background1.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+main {
+    position: relative;
+    z-index: 1; /* コンテンツが背景の上に表示されるようにする */
+}
+
+html, body {
+    overflow-x: hidden; /* 横スクロールを隠す */
+}
